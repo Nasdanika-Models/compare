@@ -34,7 +34,9 @@ module org.nasdanika.models.compare {
 	requires com.google.common;
 	requires transitive org.eclipse.emf.common;
 	requires transitive org.eclipse.emf.ecore;
-	requires transitive org.eclipse.emf.ecore.xmi;	
+	requires transitive org.eclipse.emf.ecore.xmi;
+//	requires org.nasdanika.models.maven;
+//	requires org.nasdanika.emf;	
 	
 	provides CapabilityFactory with CompareEPackageResourceSetCapabilityFactory;
 	

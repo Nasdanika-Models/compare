@@ -114,6 +114,21 @@
             <groupId>org.nasdanika.core</groupId>
             <artifactId>capability</artifactId>
             <version>${core.version}</version>
+        </dependency>               
+
+        <!-- For POM and diagram compare testing -->
+        <!--        
+        <dependency>
+            <groupId>org.nasdanika.models.maven</groupId>
+            <artifactId>model</artifactId>
+            <version>2025.5.0</version>
         </dependency>       
+        <dependency>
+            <groupId>org.nasdanika.core</groupId>
+            <artifactId>emf</artifactId>
+            <version>${core.version}</version>
+        </dependency>               
+        -->
+        
 	</dependencies>
 </project>
