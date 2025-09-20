@@ -1,0 +1,501 @@
+{
+  "references/eClassifiers/Diff/inheritance.html": {
+    "path": "Diff/Inheritance",
+    "link-uuid": "3fbf2fcd-c44c-4950-bad5-7d9ec61bd26b",
+    "title": "Inheritance",
+    "content": "Subtypes ",
+    "timestamp": 1758369953341
+  },
+  "references/eClassifiers/ResourceLocationChange/inheritance.html": {
+    "path": "ResourceLocationChange/Inheritance",
+    "link-uuid": "60079f8f-0387-49f6-92a0-b0ec829906bf",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1758369953603
+  },
+  "references/eClassifiers/Comparison/references/eOperations/getMatch-2/references/eParameters/element/index.html": {
+    "path": "Comparison/Operations/getMatch/Parameters/element",
+    "link-uuid": "e1466365-8e59-47a6-81a3-d63c1ec03a1c",
+    "title": "element",
+    "content": "Type EObject Multiplicity 0..1",
+    "timestamp": 1758369953252
+  },
+  "references/eClassifiers/Match/references/eStructuralFeatures/submatches/index.html": {
+    "path": "Match/References/submatches",
+    "link-uuid": "64d8a271-4ade-489f-8815-eff72bc3759d",
+    "title": "submatches",
+    "content": "Type Match Multiplicity 0..*",
+    "timestamp": 1758369953496
+  },
+  "references/eClassifiers/ResourceAttachmentChange/inheritance.html": {
+    "path": "ResourceAttachmentChange/Inheritance",
+    "link-uuid": "2d567809-8f1e-4a85-b373-d7097443b6f5",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1758369953577
+  },
+  "references/eClassifiers/ResourceLocationChange/references/eStructuralFeatures/baseLocation/index.html": {
+    "path": "ResourceLocationChange/Attributes/baseLocation",
+    "link-uuid": "ae735c87-3a5d-44cc-bd74-18475a2649ce",
+    "title": "baseLocation",
+    "content": "Type EString Multiplicity 1",
+    "timestamp": 1758369953609
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/equivalence/index.html": {
+    "path": "Diff/References/equivalence",
+    "link-uuid": "d7d217a3-b4a7-4a4c-9999-c681e590e7bb",
+    "title": "equivalence",
+    "content": "Type Equivalence Multiplicity 0..1",
+    "timestamp": 1758369953361
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/state/index.html": {
+    "path": "Diff/Attributes/state",
+    "link-uuid": "6a03480b-31f6-4dfe-8042-4cc0a6d8cd9b",
+    "title": "state",
+    "content": "Type DifferenceState Multiplicity 1",
+    "timestamp": 1758369953388
+  },
+  "references/eClassifiers/Comparison/references/eOperations/getDifferences-0/index.html": {
+    "path": "Comparison/Operations/getDifferences",
+    "link-uuid": "08bc5b30-44b5-4dff-9bc8-968fd493259d",
+    "title": "getDifferences",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953233
+  },
+  "references/eClassifiers/Comparison/references/eOperations/getDifferences-1/references/eParameters/element/index.html": {
+    "path": "Comparison/Operations/getDifferences/Parameters/element",
+    "link-uuid": "26555e00-d7e3-4528-b3fa-890e13236290",
+    "title": "element",
+    "content": "Type EObject Multiplicity 0..1",
+    "timestamp": 1758369953241
+  },
+  "references/eClassifiers/ResourceLocationChange/references/eStructuralFeatures/changedLocation/index.html": {
+    "path": "ResourceLocationChange/Attributes/changedLocation",
+    "link-uuid": "152359fb-6a77-49b9-a47b-186c33c0c718",
+    "title": "changedLocation",
+    "content": "Type EString Multiplicity 1",
+    "timestamp": 1758369953611
+  },
+  "index.html": {
+    "link-uuid": "1918029c-3597-44f6-8e27-f0bf49655b17",
+    "title": "EMF Compare Model",
+    "content": "Maven Central. Example AttributeChange attrChange = CompareFactory.eINSTANCE.createAttributeChange();\nattrChange.setAttribute(ComparePackage.Literals.ATTRIBUTE_CHANGE__VALUE);\n\nAttributeChange oAttrChange = CompareFactory.eINSTANCE.createAttributeChange();\noAttrChange.setAttribute(ComparePackage.Literals.COMPARISON__THREE_WAY);\n\nIComparisonScope scope = new DefaultComparisonScope(attrChange, oAttrChange, null);\nComparison comparison = EMFCompare.builder().build().compare(scope);\ncomparison.getDifferences().forEach(System.out::println); ResourceAttachmentChange Match IEqualityHelper Equivalence AttributeChange Conflict Comparison matches conflicts equivalences DifferenceKind FeatureMapChange Diagnostic MatchResource comparison matchedResources ReferenceChange DifferenceSource DifferenceState EIterable ConflictKind Diff match conflict equivalence differences differences differences ResourceLocationChange locationChanges Compare",
+    "timestamp": 1758369953152
+  },
+  "references/eClassifiers/Match/references/eStructuralFeatures/left/index.html": {
+    "path": "Match/References/left",
+    "link-uuid": "2f5e884c-ee2a-4caf-9aa0-16d0308e8bd2",
+    "title": "left",
+    "content": "Type EObject Multiplicity 0..1",
+    "timestamp": 1758369953490
+  },
+  "references/eClassifiers/ReferenceChange/inheritance.html": {
+    "path": "ReferenceChange/Inheritance",
+    "link-uuid": "e4eacd58-b804-4806-9736-f2c9935688eb",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1758369953551
+  },
+  "references/eClassifiers/Conflict/references/eStructuralFeatures/kind/index.html": {
+    "path": "Conflict/Attributes/kind",
+    "link-uuid": "8e5c9b00-e04b-4fc7-872c-815f0ec54738",
+    "title": "kind",
+    "content": "Type ConflictKind Multiplicity 1",
+    "timestamp": 1758369953307
+  },
+  "references/eClassifiers/MatchResource/references/eStructuralFeatures/comparison/index.html": {
+    "path": "MatchResource/References/comparison",
+    "link-uuid": "75ad77c9-839c-422f-be7f-978ab11eb268",
+    "title": "comparison",
+    "content": "Type Comparison Multiplicity 0..1",
+    "timestamp": 1758369953518
+  },
+  "references/eClassifiers/ResourceLocationChange/index.html": {
+    "link-uuid": "53da10c4-ea7f-4171-87d5-c4bd68387b74",
+    "title": "ResourceLocationChange",
+    "content": "Diagram ",
+    "timestamp": 1758369953601
+  },
+  "references/eClassifiers/Diff/index.html": {
+    "link-uuid": "f68b2ccf-c057-48c4-af99-07dd4dc3d3b0",
+    "title": "Diff",
+    "content": "Diagram ",
+    "timestamp": 1758369953338
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/refines/index.html": {
+    "path": "Diff/References/refines",
+    "link-uuid": "11dce05e-d8f9-40df-8b27-77ac50f0ed93",
+    "title": "refines",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953378
+  },
+  "references/eClassifiers/FeatureMapChange/index.html": {
+    "link-uuid": "d874f2e5-ecd5-4f0e-b7c0-59554a0a4117",
+    "title": "FeatureMapChange",
+    "content": "Diagram ",
+    "timestamp": 1758369953441
+  },
+  "references/eClassifiers/ReferenceChange/references/eStructuralFeatures/value/index.html": {
+    "path": "ReferenceChange/References/value",
+    "link-uuid": "8a757bc3-bea6-4d01-9a72-249fef7bef3a",
+    "title": "value",
+    "content": "Type EObject Multiplicity 0..1",
+    "timestamp": 1758369953559
+  },
+  "references/eClassifiers/Comparison/references/eStructuralFeatures/equivalences/index.html": {
+    "path": "Comparison/References/equivalences",
+    "link-uuid": "d430f341-24d2-4ab0-91f3-7bf3f72f573e",
+    "title": "equivalences",
+    "content": "Type Equivalence Multiplicity 0..*",
+    "timestamp": 1758369953260
+  },
+  "references/eClassifiers/Match/references/eOperations/getAllDifferences-2/index.html": {
+    "path": "Match/Operations/getAllDifferences",
+    "link-uuid": "b58d5ca0-84c8-438a-afc6-77b528c38be8",
+    "title": "getAllDifferences",
+    "content": "Type EIterable&lt; Diff&gt; Multiplicity 0..1",
+    "timestamp": 1758369953481
+  },
+  "references/eClassifiers/ResourceAttachmentChange/index.html": {
+    "link-uuid": "8eb10004-9650-4a4d-8734-3147a836303f",
+    "title": "ResourceAttachmentChange",
+    "content": "Diagram ",
+    "timestamp": 1758369953575
+  },
+  "references/eClassifiers/Match/index.html": {
+    "link-uuid": "048eb2b3-67ef-4bd0-8b02-d6b59348935d",
+    "title": "Match",
+    "content": "Diagram ",
+    "timestamp": 1758369953474
+  },
+  "references/eClassifiers/Match/references/eOperations/getComparison-0/index.html": {
+    "path": "Match/Operations/getComparison",
+    "link-uuid": "2f3c4a6e-83e4-4e8c-a4ed-da00ca0e9296",
+    "title": "getComparison",
+    "content": "Type Comparison Multiplicity 0..1",
+    "timestamp": 1758369953486
+  },
+  "references/eClassifiers/Comparison/references/eStructuralFeatures/matches/index.html": {
+    "path": "Comparison/References/matches",
+    "link-uuid": "3064f960-b498-42bd-8ae2-cf62f4035c8b",
+    "title": "matches",
+    "content": "Type Match Multiplicity 0..*",
+    "timestamp": 1758369953265
+  },
+  "references/eClassifiers/Match/references/eStructuralFeatures/differences/index.html": {
+    "path": "Match/References/differences",
+    "link-uuid": "c7d7bca3-27fe-42e4-90af-65a79e5d76f0",
+    "title": "differences",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953488
+  },
+  "references/eClassifiers/Comparison/references/eStructuralFeatures/diagnostic/index.html": {
+    "path": "Comparison/Attributes/diagnostic",
+    "link-uuid": "bb55f38c-8eac-4f65-a9f8-fe46003ca6ee",
+    "title": "diagnostic",
+    "content": "Type Diagnostic Multiplicity 0..1",
+    "timestamp": 1758369953257
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/kind/index.html": {
+    "path": "Diff/Attributes/kind",
+    "link-uuid": "095194bd-7101-47f3-b40e-daff3e06b6f6",
+    "title": "kind",
+    "content": "Type DifferenceKind Multiplicity 1",
+    "timestamp": 1758369953368
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/requiredBy/index.html": {
+    "path": "Diff/References/requiredBy",
+    "link-uuid": "922f0846-807c-404a-90ed-fb66f4bc9478",
+    "title": "requiredBy",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953380
+  },
+  "references/eClassifiers/Conflict/references/eOperations/getLeftDifferences-0/index.html": {
+    "path": "Conflict/Operations/getLeftDifferences",
+    "link-uuid": "52bc3906-3cf8-459d-977e-0a9433845b8e",
+    "title": "getLeftDifferences",
+    "content": "Type Diff Multiplicity 1..*",
+    "timestamp": 1758369953299
+  },
+  "references/eClassifiers/FeatureMapChange/references/eStructuralFeatures/value/index.html": {
+    "path": "FeatureMapChange/Attributes/value",
+    "link-uuid": "c036c778-e72b-4677-99a5-35257ef4e849",
+    "title": "value",
+    "content": "Type EJavaObject Multiplicity 0..1",
+    "timestamp": 1758369953453
+  },
+  "references/eClassifiers/MatchResource/references/eStructuralFeatures/origin/index.html": {
+    "path": "MatchResource/Attributes/origin",
+    "link-uuid": "e023559e-700f-4859-97ef-c24426c06696",
+    "title": "origin",
+    "content": "Type EResource Multiplicity 0..1",
+    "timestamp": 1758369953526
+  },
+  "references/eClassifiers/MatchResource/references/eStructuralFeatures/leftURI/index.html": {
+    "path": "MatchResource/Attributes/leftURI",
+    "link-uuid": "3072c739-ff4d-4b32-ba0f-b256ec88f0fa",
+    "title": "leftURI",
+    "content": "Type EString Multiplicity 1",
+    "timestamp": 1758369953522
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/implies/index.html": {
+    "path": "Diff/References/implies",
+    "link-uuid": "7658fa85-bc75-4268-9026-c7fce342e73c",
+    "title": "implies",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953366
+  },
+  "references/eClassifiers/MatchResource/references/eStructuralFeatures/originURI/index.html": {
+    "path": "MatchResource/Attributes/originURI",
+    "link-uuid": "41f2ae74-56b5-454b-b35e-5a2943b79fd2",
+    "title": "originURI",
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1758369953528
+  },
+  "references/eClassifiers/Comparison/references/eStructuralFeatures/matchedResources/index.html": {
+    "path": "Comparison/References/matchedResources",
+    "link-uuid": "b4d13c65-9058-4723-99b5-343e8a08ee98",
+    "title": "matchedResources",
+    "content": "Type MatchResource Multiplicity 0..*",
+    "timestamp": 1758369953262
+  },
+  "references/eClassifiers/Match/references/eStructuralFeatures/right/index.html": {
+    "path": "Match/References/right",
+    "link-uuid": "cdaba852-72af-49a5-ba70-c86b05ad7dbb",
+    "title": "right",
+    "content": "Type EObject Multiplicity 0..1",
+    "timestamp": 1758369953494
+  },
+  "references/eClassifiers/Comparison/references/eOperations/getEqualityHelper-3/index.html": {
+    "path": "Comparison/Operations/getEqualityHelper",
+    "link-uuid": "2c88fac1-9930-4015-a76e-14e368f47584",
+    "title": "getEqualityHelper",
+    "content": "Type IEqualityHelper Multiplicity 0..1",
+    "timestamp": 1758369953243
+  },
+  "references/eClassifiers/MatchResource/references/eStructuralFeatures/right/index.html": {
+    "path": "MatchResource/Attributes/right",
+    "link-uuid": "5d010ac4-a8e2-4d05-9ca8-893592a39dd9",
+    "title": "right",
+    "content": "Type EResource Multiplicity 0..1",
+    "timestamp": 1758369953530
+  },
+  "references/eClassifiers/MatchResource/references/eStructuralFeatures/rightURI/index.html": {
+    "path": "MatchResource/Attributes/rightURI",
+    "link-uuid": "34cb15a5-9db7-4b3a-8459-571f412dfc95",
+    "title": "rightURI",
+    "content": "Type EString Multiplicity 1",
+    "timestamp": 1758369953532
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/conflict/index.html": {
+    "path": "Diff/References/conflict",
+    "link-uuid": "0de7575b-f79f-4533-b1dc-553f84bce557",
+    "title": "conflict",
+    "content": "Type Conflict Multiplicity 0..1",
+    "timestamp": 1758369953359
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/refinedBy/index.html": {
+    "path": "Diff/References/refinedBy",
+    "link-uuid": "06f0f5ea-4a19-4d70-9874-3947ef7bfd6e",
+    "title": "refinedBy",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953375
+  },
+  "references/eClassifiers/Conflict/references/eOperations/getRightDifferences-1/index.html": {
+    "path": "Conflict/Operations/getRightDifferences",
+    "link-uuid": "957d00ad-6776-4e49-b1e1-f9df82e38933",
+    "title": "getRightDifferences",
+    "content": "Type Diff Multiplicity 1..*",
+    "timestamp": 1758369953301
+  },
+  "references/eClassifiers/Match/references/eOperations/getAllSubmatches-1/index.html": {
+    "path": "Match/Operations/getAllSubmatches",
+    "link-uuid": "b2471d63-4ca2-43d4-8550-541f7ab23a25",
+    "title": "getAllSubmatches",
+    "content": "Type EIterable&lt; Match&gt; Multiplicity 0..1",
+    "timestamp": 1758369953483
+  },
+  "references/eClassifiers/Match/references/eStructuralFeatures/origin/index.html": {
+    "path": "Match/References/origin",
+    "link-uuid": "35bf7e47-bec5-430c-84a9-9219ac8f4200",
+    "title": "origin",
+    "content": "Type EObject Multiplicity 0..1",
+    "timestamp": 1758369953492
+  },
+  "references/eClassifiers/ReferenceChange/index.html": {
+    "link-uuid": "8394145c-2427-41ea-aac8-91a8a4cd98c2",
+    "title": "ReferenceChange",
+    "content": "Diagram ",
+    "timestamp": 1758369953549
+  },
+  "references/eClassifiers/MatchResource/index.html": {
+    "link-uuid": "892f4983-04cb-46ef-acc5-a2206d4e91d2",
+    "title": "MatchResource",
+    "content": "Diagram ",
+    "timestamp": 1758369953513
+  },
+  "references/eClassifiers/Comparison/references/eOperations/getMatch-2/index.html": {
+    "path": "Comparison/Operations/getMatch",
+    "link-uuid": "f90ad88a-3f50-4b17-89fb-e606ef773c0b",
+    "title": "getMatch",
+    "content": "Type Match Multiplicity 0..1",
+    "timestamp": 1758369953247
+  },
+  "references/eClassifiers/Conflict/references/eStructuralFeatures/differences/index.html": {
+    "path": "Conflict/References/differences",
+    "link-uuid": "6d3ad638-ab6d-41fd-82eb-e0dd4a6fc877",
+    "title": "differences",
+    "content": "Type Diff Multiplicity 2..*",
+    "timestamp": 1758369953304
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/primeRefining/index.html": {
+    "path": "Diff/References/primeRefining",
+    "link-uuid": "56c386a0-ca7c-4325-939b-abc3f31d6bae",
+    "title": "primeRefining",
+    "content": "Type Diff Multiplicity 0..1",
+    "timestamp": 1758369953373
+  },
+  "references/eClassifiers/FeatureMapChange/inheritance.html": {
+    "path": "FeatureMapChange/Inheritance",
+    "link-uuid": "42b95fef-afbf-44f6-a18e-2e13fa338c55",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1758369953444
+  },
+  "references/eClassifiers/AttributeChange/inheritance.html": {
+    "path": "AttributeChange/Inheritance",
+    "link-uuid": "54b126ef-0c19-4188-8923-91e8826d864a",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1758369953175
+  },
+  "references/eClassifiers/MatchResource/references/eStructuralFeatures/locationChanges/index.html": {
+    "path": "MatchResource/References/locationChanges",
+    "link-uuid": "06d4c013-5e69-4902-9146-9929e14a116b",
+    "title": "locationChanges",
+    "content": "Type ResourceLocationChange Multiplicity 0..2",
+    "timestamp": 1758369953524
+  },
+  "references/eClassifiers/MatchResource/references/eStructuralFeatures/left/index.html": {
+    "path": "MatchResource/Attributes/left",
+    "link-uuid": "34220ef2-25e1-4433-b5e3-4450b6dd9e44",
+    "title": "left",
+    "content": "Type EResource Multiplicity 0..1",
+    "timestamp": 1758369953520
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/impliedBy/index.html": {
+    "path": "Diff/References/impliedBy",
+    "link-uuid": "2ef6a6ff-69d7-4a50-84c5-77a189c20ce1",
+    "title": "impliedBy",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953364
+  },
+  "references/eClassifiers/AttributeChange/index.html": {
+    "link-uuid": "3b5f85c7-3681-45c2-8895-1b18e2cf419a",
+    "title": "AttributeChange",
+    "content": "Diagram ",
+    "timestamp": 1758369953172
+  },
+  "references/eClassifiers/AttributeChange/references/eStructuralFeatures/attribute/index.html": {
+    "path": "AttributeChange/References/attribute",
+    "link-uuid": "aac1ba22-25a7-4dec-b7a3-6e375fcfe851",
+    "title": "attribute",
+    "content": "Type EAttribute Multiplicity 1",
+    "timestamp": 1758369953185
+  },
+  "references/eClassifiers/FeatureMapChange/references/eStructuralFeatures/attribute/index.html": {
+    "path": "FeatureMapChange/References/attribute",
+    "link-uuid": "6bc13635-c164-4058-87cc-b36f7ed6bc12",
+    "title": "attribute",
+    "content": "Type EAttribute Multiplicity 1",
+    "timestamp": 1758369953451
+  },
+  "references/eClassifiers/Equivalence/references/eStructuralFeatures/differences/index.html": {
+    "path": "Equivalence/References/differences",
+    "link-uuid": "aa77c0c2-1699-4f87-a764-c2beeb078348",
+    "title": "differences",
+    "content": "Type Diff Multiplicity 2..*",
+    "timestamp": 1758369953422
+  },
+  "references/eClassifiers/Comparison/index.html": {
+    "link-uuid": "cd6ad79d-26ce-4812-a30c-808ecf0ee3d2",
+    "title": "Comparison",
+    "content": "Diagram ",
+    "timestamp": 1758369953222
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/requires/index.html": {
+    "path": "Diff/References/requires",
+    "link-uuid": "569543db-3d7e-4fc9-b896-e8ea8f384de7",
+    "title": "requires",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953383
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/match/index.html": {
+    "path": "Diff/References/match",
+    "link-uuid": "71dd2599-2da4-4632-9add-70714cd2d5c3",
+    "title": "match",
+    "content": "Type Match Multiplicity 0..1",
+    "timestamp": 1758369953371
+  },
+  "references/eClassifiers/Diff/references/eStructuralFeatures/source/index.html": {
+    "path": "Diff/Attributes/source",
+    "link-uuid": "9e4acf54-980b-4707-9272-f5724b3b9f08",
+    "title": "source",
+    "content": "Type DifferenceSource Multiplicity 1",
+    "timestamp": 1758369953385
+  },
+  "references/eClassifiers/Comparison/references/eStructuralFeatures/threeWay/index.html": {
+    "path": "Comparison/Attributes/threeWay",
+    "link-uuid": "10d1ef6e-250e-4605-93f8-75d13a750129",
+    "title": "threeWay",
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1758369953268
+  },
+  "references/eClassifiers/ReferenceChange/references/eStructuralFeatures/reference/index.html": {
+    "path": "ReferenceChange/References/reference",
+    "link-uuid": "d5b6c09a-ff11-4e82-a131-c339ce61cdc5",
+    "title": "reference",
+    "content": "Type EReference Multiplicity 1",
+    "timestamp": 1758369953557
+  },
+  "references/eClassifiers/AttributeChange/references/eStructuralFeatures/value/index.html": {
+    "path": "AttributeChange/Attributes/value",
+    "link-uuid": "dbee0f96-1d5d-4f5a-ae70-05a9db513d06",
+    "title": "value",
+    "content": "Type EJavaObject Multiplicity 0..1",
+    "timestamp": 1758369953187
+  },
+  "references/eClassifiers/Equivalence/index.html": {
+    "link-uuid": "f8a50858-f22b-4a96-9fe1-77906bcab990",
+    "title": "Equivalence",
+    "content": "Diagram ",
+    "timestamp": 1758369953417
+  },
+  "references/eClassifiers/ResourceAttachmentChange/references/eStructuralFeatures/resourceURI/index.html": {
+    "path": "ResourceAttachmentChange/Attributes/resourceURI",
+    "link-uuid": "e3317bf8-95c5-4915-bf40-adeb8ef2a251",
+    "title": "resourceURI",
+    "content": "Type EString Multiplicity 1",
+    "timestamp": 1758369953582
+  },
+  "references/eClassifiers/Comparison/references/eStructuralFeatures/conflicts/index.html": {
+    "path": "Comparison/References/conflicts",
+    "link-uuid": "c9cee1a5-c0b4-4127-82ee-8579af173370",
+    "title": "conflicts",
+    "content": "Type Conflict Multiplicity 0..*",
+    "timestamp": 1758369953255
+  },
+  "references/eClassifiers/Comparison/references/eOperations/getDifferences-1/index.html": {
+    "path": "Comparison/Operations/getDifferences",
+    "link-uuid": "a0b84e14-126b-45a2-8158-fb8055999c6e",
+    "title": "getDifferences",
+    "content": "Type Diff Multiplicity 0..*",
+    "timestamp": 1758369953236
+  },
+  "references/eClassifiers/Conflict/index.html": {
+    "link-uuid": "29d8357d-598d-4710-b3cd-1f749f78c7da",
+    "title": "Conflict",
+    "content": "Diagram ",
+    "timestamp": 1758369953291
+  }
+}
