@@ -58,7 +58,9 @@ public class EcoreGenCompareProcessorsFactory {
 				[Maven Central](https://central.sonatype.com/artifact/org.nasdanika.models.compare/model).	
 					
 				
-				## Example
+				## Examples
+				
+				### Basic
 				
 				```java
 				AttributeChange attrChange = CompareFactory.eINSTANCE.createAttributeChange();
@@ -71,6 +73,86 @@ public class EcoreGenCompareProcessorsFactory {
 				Comparison comparison = EMFCompare.builder().build().compare(scope);
 				comparison.getDifferences().forEach(System.out::println);
 				```
+				
+				### Comparing pom.xml versions
+				
+				Retrieves file revision with ``GitURIHandler`` using a tag, saves versions and the difference model to an XMI resource.
+				
+				```java
+				org.nasdanika.models.maven.Model model = MavenFactory.eINSTANCE.createModel();
+				File pomFile = new File("..\\..\\excel\\pom.xml").getCanonicalFile();
+				try (InputStream in = new FileInputStream(pomFile)) {
+					model.load(in);
+				}
+				System.out.println(model.getName());
+				System.out.println(model.getGroupId());
+				System.out.println(model.getArtifactId());
+				System.out.println(model.getVersion());
+				
+				GitURIHandler gitURIHander = new GitURIHandler(pomFile);
+				
+				URI pomURI = URI.createURI("git://maven-2025.5.0/pom.xml");
+				org.nasdanika.models.maven.Model gitModel = MavenFactory.eINSTANCE.createModel();
+				try (InputStream in = gitURIHander.createInputStream(pomURI, null)) {
+					gitModel.load(in);
+				}
+				System.out.println(gitModel.getName());
+				System.out.println(gitModel.getGroupId());
+				System.out.println(gitModel.getArtifactId());
+				System.out.println(gitModel.getVersion());
+				
+				IComparisonScope scope = new DefaultComparisonScope(model, gitModel, null);
+				Comparison comparison = EMFCompare.builder().build().compare(scope);
+				comparison.getDifferences().forEach(System.out::println);	
+				
+				CapabilityLoader capabilityLoader = new CapabilityLoader();
+				ProgressMonitor progressMonitor = new PrintStreamProgressMonitor();
+				Requirement<ResourceSetRequirement, ResourceSet> requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);		
+				ResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);
+				
+				Resource resource = resourceSet.createResource(URI.createFileURI("target/compare.xml"));
+				resource.getContents().add(comparison);
+				resource.getContents().add(model);
+				resource.getContents().add(gitModel);
+				resource.save(null);						
+				```
+				
+				[Output](https://github.com/Nasdanika-Models/compare/blob/main/model/test-output/pom-compare.xml)
+				
+				### Comparing Draw.io diagram versions
+				
+				Diagrams are loaded from input streams - one from classloader resource and the other from a Git commit. 
+				Then the diagram documents are converted to the [diagram model](https://drawio.models.nasdanika.org/diagram.html).
+				After that the models are compared and stored with the comparison result in a resource.
+				
+				```java
+				GitURIHandler gitURIHander = new GitURIHandler();
+				URI diagramURI = URI.createURI("git://5bfe5731bbdf10b742a3db53ca5e4dad0844732b/model/src/test/resources/org/nasdanika/models/compare/tests/test.drawio");
+				try (InputStream in = getClass().getResourceAsStream("test.drawio"); InputStream gitIn = gitURIHander.createInputStream(diagramURI, null)) {
+					Document gitDocument = Document.load(in, diagramURI);
+					Document document = Document.load(gitIn, diagramURI);
+				
+					org.nasdanika.drawio.model.Document modelDocument = document.toModelDocument();
+					org.nasdanika.drawio.model.Document gitModelDocument = gitDocument.toModelDocument();
+					IComparisonScope scope = new DefaultComparisonScope(modelDocument, gitModelDocument, null);
+					Comparison comparison = EMFCompare.builder().build().compare(scope);
+					comparison.getDifferences().forEach(System.out::println);	
+					
+					CapabilityLoader capabilityLoader = new CapabilityLoader();
+					ProgressMonitor progressMonitor = new PrintStreamProgressMonitor();
+					Requirement<ResourceSetRequirement, ResourceSet> requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);		
+					ResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);
+					
+					Resource resource = resourceSet.createResource(URI.createFileURI("target/diagram-compare.xml"));
+					resource.getContents().add(comparison);
+					resource.getContents().add(modelDocument);
+					resource.getContents().add(gitModelDocument);
+					resource.save(null);
+				}		
+				```
+				
+				[Output](https://github.com/Nasdanika-Models/compare/blob/main/model/test-output/diagram-compare.xml)				
+				
 				"""
 	)
 	public EPackageNodeProcessor createEPackageProcessor(

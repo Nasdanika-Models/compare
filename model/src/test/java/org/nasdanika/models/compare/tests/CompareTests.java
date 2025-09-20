@@ -89,8 +89,8 @@ public class CompareTests {
 //			Document document = Document.load(gitIn, diagramURI);
 //
 //			org.nasdanika.drawio.model.Document modelDocument = document.toModelDocument();
-//			org.nasdanika.drawio.model.Document gitModelDocument2 = gitDocument.toModelDocument();
-//			IComparisonScope scope = new DefaultComparisonScope(modelDocument, gitModelDocument2, null);
+//			org.nasdanika.drawio.model.Document gitModelDocument = gitDocument.toModelDocument();
+//			IComparisonScope scope = new DefaultComparisonScope(modelDocument, gitModelDocument, null);
 //			Comparison comparison = EMFCompare.builder().build().compare(scope);
 //			comparison.getDifferences().forEach(System.out::println);	
 //			
@@ -102,7 +102,7 @@ public class CompareTests {
 //			Resource resource = resourceSet.createResource(URI.createFileURI("target/diagram-compare.xml"));
 //			resource.getContents().add(comparison);
 //			resource.getContents().add(modelDocument);
-//			resource.getContents().add(gitModelDocument2);
+//			resource.getContents().add(gitModelDocument);
 //			resource.save(null);
 //		}		
 //	}

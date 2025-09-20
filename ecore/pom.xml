@@ -20,7 +20,7 @@
 			<groupId>org.nasdanika.models.ecore</groupId>
 			<artifactId>graph</artifactId>
 			<version>${models.ecore.version}</version>
-		</dependency>		
+		</dependency>				
 	</dependencies>
 </project>
 
