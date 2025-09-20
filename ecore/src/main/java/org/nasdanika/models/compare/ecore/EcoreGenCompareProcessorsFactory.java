@@ -130,8 +130,8 @@ public class EcoreGenCompareProcessorsFactory {
 				URI diagramURI = URI.createURI("git://5bfe5731bbdf10b742a3db53ca5e4dad0844732b/model/src/test/resources/org/nasdanika/models/compare/tests/test.drawio");
 				URL resourceURL = getClass().getResource("test.drawio");
 				try (InputStream in = resourceURL.openStream(); InputStream gitIn = gitURIHander.createInputStream(diagramURI, null)) {
-					Document gitDocument = Document.load(in, diagramURI);
-					Document document = Document.load(gitIn, URI.createURI(resourceURL.toString()));
+					Document gitDocument = Document.load(gitIn, diagramURI);
+					Document document = Document.load(in, URI.createURI(resourceURL.toString()));
 				
 					org.nasdanika.drawio.model.Document modelDocument = document.toModelDocument();
 					org.nasdanika.drawio.model.Document gitModelDocument = gitDocument.toModelDocument();
