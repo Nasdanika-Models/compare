@@ -1,501 +1,501 @@
 {
   "references/eClassifiers/Diff/inheritance.html": {
     "path": "Diff/Inheritance",
-    "link-uuid": "1fd9ff91-50b4-4fdf-bd7a-123e5305f6d2",
+    "link-uuid": "5a7d7f0b-dd99-4f37-9fa1-a652e740212c",
     "title": "Inheritance",
     "content": "Subtypes ",
-    "timestamp": 1758397328730
+    "timestamp": 1758397834347
   },
   "references/eClassifiers/ResourceLocationChange/inheritance.html": {
     "path": "ResourceLocationChange/Inheritance",
-    "link-uuid": "34fc12f9-1904-4554-a190-308e4f05f091",
+    "link-uuid": "7bb333f3-ae5c-4ae0-8c43-53f66a7e5482",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758397328994
+    "timestamp": 1758397834629
   },
   "references/eClassifiers/Comparison/references/eOperations/getMatch-2/references/eParameters/element/index.html": {
     "path": "Comparison/Operations/getMatch/Parameters/element",
-    "link-uuid": "49114a8b-bc69-4ca8-8045-1a2f80256cfb",
+    "link-uuid": "1dd2ad08-8c2c-46e9-a75d-e449445131aa",
     "title": "element",
     "content": "Type EObject Multiplicity 0..1",
-    "timestamp": 1758397328643
+    "timestamp": 1758397834260
   },
   "references/eClassifiers/Match/references/eStructuralFeatures/submatches/index.html": {
     "path": "Match/References/submatches",
-    "link-uuid": "352391be-0682-441c-ad90-a8948f72752d",
+    "link-uuid": "9f774f67-d06d-4761-b855-41f977333533",
     "title": "submatches",
     "content": "Type Match Multiplicity 0..*",
-    "timestamp": 1758397328887
+    "timestamp": 1758397834517
   },
   "references/eClassifiers/ResourceAttachmentChange/inheritance.html": {
     "path": "ResourceAttachmentChange/Inheritance",
-    "link-uuid": "3610fd83-a122-49e6-b72a-695909e303f5",
+    "link-uuid": "f8b1beff-2bf6-47f3-a0c5-544368f676c7",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758397328970
+    "timestamp": 1758397834603
   },
   "references/eClassifiers/ResourceLocationChange/references/eStructuralFeatures/baseLocation/index.html": {
     "path": "ResourceLocationChange/Attributes/baseLocation",
-    "link-uuid": "9a0c2483-13ee-4064-a10d-27861ec68f3d",
+    "link-uuid": "8eff5da7-1b63-402a-926f-598b75a2c49e",
     "title": "baseLocation",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1758397329001
+    "timestamp": 1758397834635
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/equivalence/index.html": {
     "path": "Diff/References/equivalence",
-    "link-uuid": "98ae62e1-c746-42fe-bd76-7775cd1235cb",
+    "link-uuid": "4e77761d-4a58-4d18-894a-b2a0d4cd8501",
     "title": "equivalence",
     "content": "Type Equivalence Multiplicity 0..1",
-    "timestamp": 1758397328748
+    "timestamp": 1758397834367
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/state/index.html": {
     "path": "Diff/Attributes/state",
-    "link-uuid": "be8700c2-7160-4a30-a3ac-f08feca3d9b3",
+    "link-uuid": "e5591c4e-27a2-47ec-af16-986b199c6016",
     "title": "state",
     "content": "Type DifferenceState Multiplicity 1",
-    "timestamp": 1758397328776
+    "timestamp": 1758397834393
   },
   "references/eClassifiers/Comparison/references/eOperations/getDifferences-0/index.html": {
     "path": "Comparison/Operations/getDifferences",
-    "link-uuid": "d87d3aa0-a90b-455f-a758-1fd63a436206",
+    "link-uuid": "1f1c77f4-e7ce-40ab-b25a-b8676146862e",
     "title": "getDifferences",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328624
+    "timestamp": 1758397834237
   },
   "references/eClassifiers/Comparison/references/eOperations/getDifferences-1/references/eParameters/element/index.html": {
     "path": "Comparison/Operations/getDifferences/Parameters/element",
-    "link-uuid": "74d6ae78-5187-4501-b574-a1b2a668ed0a",
+    "link-uuid": "18ae19ba-ac0c-4e96-9480-39ef93312156",
     "title": "element",
     "content": "Type EObject Multiplicity 0..1",
-    "timestamp": 1758397328632
+    "timestamp": 1758397834250
   },
   "references/eClassifiers/ResourceLocationChange/references/eStructuralFeatures/changedLocation/index.html": {
     "path": "ResourceLocationChange/Attributes/changedLocation",
-    "link-uuid": "d3b0dca0-fd7e-4e30-acc9-82f302770a8c",
+    "link-uuid": "29186a0e-3699-42a5-8e41-cb369717c002",
     "title": "changedLocation",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1758397329003
+    "timestamp": 1758397834637
   },
   "index.html": {
-    "link-uuid": "6cf4288e-713c-4ecc-8663-90d3423a9c6d",
+    "link-uuid": "87d00964-6f8f-4ee9-931b-2afb19736ae4",
     "title": "EMF Compare Model",
-    "content": "Maven Central. Examples Basic AttributeChange attrChange = CompareFactory.eINSTANCE.createAttributeChange();\nattrChange.setAttribute(ComparePackage.Literals.ATTRIBUTE_CHANGE__VALUE);\n\nAttributeChange oAttrChange = CompareFactory.eINSTANCE.createAttributeChange();\noAttrChange.setAttribute(ComparePackage.Literals.COMPARISON__THREE_WAY);\n\nIComparisonScope scope = new DefaultComparisonScope(attrChange, oAttrChange, null);\nComparison comparison = EMFCompare.builder().build().compare(scope);\ncomparison.getDifferences().forEach(System.out::println);\n Comparing pom.xml versions Retrieves file revision with GitURIHandler using a tag, saves versions and the difference model to an XMI resource. org.nasdanika.models.maven.Model model = MavenFactory.eINSTANCE.createModel();\nFile pomFile = new File(&quot;..\\..\\excel\\pom.xml&quot;).getCanonicalFile();\ntry (InputStream in = new FileInputStream(pomFile)) {\n\tmodel.load(in);\n}\nSystem.out.println(model.getName());\nSystem.out.println(model.getGroupId());\nSystem.out.println(model.getArtifactId());\nSystem.out.println(model.getVersion());\n\nGitURIHandler gitURIHander = new GitURIHandler(pomFile);\n\nURI pomURI = URI.createURI(&quot;git://maven-2025.5.0/pom.xml&quot;);\norg.nasdanika.models.maven.Model gitModel = MavenFactory.eINSTANCE.createModel();\ntry (InputStream in = gitURIHander.createInputStream(pomURI, null)) {\n\tgitModel.load(in);\n}\nSystem.out.println(gitModel.getName());\nSystem.out.println(gitModel.getGroupId());\nSystem.out.println(gitModel.getArtifactId());\nSystem.out.println(gitModel.getVersion());\n\nIComparisonScope scope = new DefaultComparisonScope(model, gitModel, null);\nComparison comparison = EMFCompare.builder().build().compare(scope);\ncomparison.getDifferences().forEach(System.out::println);\n\nCapabilityLoader capabilityLoader = new CapabilityLoader();\nProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\nRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\nResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);\n\nResource resource = resourceSet.createResource(URI.createFileURI(&quot;target/compare.xml&quot;));\nresource.getContents().add(comparison);\nresource.getContents().add(model);\nresource.getContents().add(gitModel);\nresource.save(null);\n Output Comparing Draw.io diagram versions Diagrams are loaded from input streams - one from classloader resource and the other from a Git commit. Then the diagram documents are converted to the diagram model. After that the models are compared and stored with the comparison result in a resource. GitURIHandler gitURIHander = new GitURIHandler();\nURI diagramURI = URI.createURI(&quot;git://5bfe5731bbdf10b742a3db53ca5e4dad0844732b/model/src/test/resources/org/nasdanika/models/compare/tests/test.drawio&quot;);\ntry (InputStream in = getClass().getResourceAsStream(&quot;test.drawio&quot;); InputStream gitIn = gitURIHander.createInputStream(diagramURI, null)) {\n\tDocument gitDocument = Document.load(in, diagramURI);\n\tDocument document = Document.load(gitIn, diagramURI);\n\n\torg.nasdanika.drawio.model.Document modelDocument = document.toModelDocument();\n\torg.nasdanika.drawio.model.Document gitModelDocument = gitDocument.toModelDocument();\n\tIComparisonScope scope = new DefaultComparisonScope(modelDocument, gitModelDocument, null);\n\tComparison comparison = EMFCompare.builder().build().compare(scope);\n\tcomparison.getDifferences().forEach(System.out::println);\n\n\tCapabilityLoader capabilityLoader = new CapabilityLoader();\n\tProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\n\tRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\n\tResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);\n\n\tResource resource = resourceSet.createResource(URI.createFileURI(&quot;target/diagram-compare.xml&quot;));\n\tresource.getContents().add(comparison);\n\tresource.getContents().add(modelDocument);\n\tresource.getContents().add(gitModelDocument);\n\tresource.save(null);\n}\n Output ResourceAttachmentChange Match IEqualityHelper Equivalence AttributeChange Conflict Comparison matches conflicts equivalences DifferenceKind FeatureMapChange Diagnostic MatchResource comparison matchedResources ReferenceChange DifferenceSource DifferenceState EIterable ConflictKind Diff match conflict equivalence differences differences differences ResourceLocationChange locationChanges Compare",
-    "timestamp": 1758397328544
+    "content": "Maven Central. Examples Basic AttributeChange attrChange = CompareFactory.eINSTANCE.createAttributeChange();\nattrChange.setAttribute(ComparePackage.Literals.ATTRIBUTE_CHANGE__VALUE);\n\nAttributeChange oAttrChange = CompareFactory.eINSTANCE.createAttributeChange();\noAttrChange.setAttribute(ComparePackage.Literals.COMPARISON__THREE_WAY);\n\nIComparisonScope scope = new DefaultComparisonScope(attrChange, oAttrChange, null);\nComparison comparison = EMFCompare.builder().build().compare(scope);\ncomparison.getDifferences().forEach(System.out::println);\n Comparing pom.xml versions Retrieves file revision with GitURIHandler using a tag, saves versions and the difference model to an XMI resource. org.nasdanika.models.maven.Model model = MavenFactory.eINSTANCE.createModel();\nFile pomFile = new File(&quot;..\\..\\excel\\pom.xml&quot;).getCanonicalFile();\ntry (InputStream in = new FileInputStream(pomFile)) {\n\tmodel.load(in);\n}\nSystem.out.println(model.getName());\nSystem.out.println(model.getGroupId());\nSystem.out.println(model.getArtifactId());\nSystem.out.println(model.getVersion());\n\nGitURIHandler gitURIHander = new GitURIHandler(pomFile);\n\nURI pomURI = URI.createURI(&quot;git://maven-2025.5.0/pom.xml&quot;);\norg.nasdanika.models.maven.Model gitModel = MavenFactory.eINSTANCE.createModel();\ntry (InputStream in = gitURIHander.createInputStream(pomURI, null)) {\n\tgitModel.load(in);\n}\nSystem.out.println(gitModel.getName());\nSystem.out.println(gitModel.getGroupId());\nSystem.out.println(gitModel.getArtifactId());\nSystem.out.println(gitModel.getVersion());\n\nIComparisonScope scope = new DefaultComparisonScope(model, gitModel, null);\nComparison comparison = EMFCompare.builder().build().compare(scope);\ncomparison.getDifferences().forEach(System.out::println);\n\nCapabilityLoader capabilityLoader = new CapabilityLoader();\nProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\nRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\nResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);\n\nResource resource = resourceSet.createResource(URI.createFileURI(&quot;target/compare.xml&quot;));\nresource.getContents().add(comparison);\nresource.getContents().add(model);\nresource.getContents().add(gitModel);\nresource.save(null);\n Output Comparing Draw.io diagram versions Diagrams are loaded from input streams - one from classloader resource and the other from a Git commit. Then the diagram documents are converted to the diagram model. After that the models are compared and stored with the comparison result in a resource. GitURIHandler gitURIHander = new GitURIHandler();\nURI diagramURI = URI.createURI(&quot;git://5bfe5731bbdf10b742a3db53ca5e4dad0844732b/model/src/test/resources/org/nasdanika/models/compare/tests/test.drawio&quot;);\nURL resourceURL = getClass().getResource(&quot;test.drawio&quot;);\ntry (InputStream in = resourceURL.openStream(); InputStream gitIn = gitURIHander.createInputStream(diagramURI, null)) {\n\tDocument gitDocument = Document.load(in, diagramURI);\n\tDocument document = Document.load(gitIn, URI.createURI(resourceURL.toString()));\n\n\torg.nasdanika.drawio.model.Document modelDocument = document.toModelDocument();\n\torg.nasdanika.drawio.model.Document gitModelDocument = gitDocument.toModelDocument();\n\tIComparisonScope scope = new DefaultComparisonScope(modelDocument, gitModelDocument, null);\n\tComparison comparison = EMFCompare.builder().build().compare(scope);\n\tcomparison.getDifferences().forEach(System.out::println);\n\n\tCapabilityLoader capabilityLoader = new CapabilityLoader();\n\tProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\n\tRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\n\tResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);\n\n\tResource resource = resourceSet.createResource(URI.createFileURI(&quot;target/diagram-compare.xml&quot;));\n\tresource.getContents().add(comparison);\n\tresource.getContents().add(modelDocument);\n\tresource.getContents().add(gitModelDocument);\n\tresource.save(null);\n}\n Output ResourceAttachmentChange Match IEqualityHelper Equivalence AttributeChange Conflict Comparison matches conflicts equivalences DifferenceKind FeatureMapChange Diagnostic MatchResource comparison matchedResources ReferenceChange DifferenceSource DifferenceState EIterable ConflictKind Diff match conflict equivalence differences differences differences ResourceLocationChange locationChanges Compare",
+    "timestamp": 1758397834160
   },
   "references/eClassifiers/Match/references/eStructuralFeatures/left/index.html": {
     "path": "Match/References/left",
-    "link-uuid": "890660a9-d5a4-49f9-b329-22ec8835dfd9",
+    "link-uuid": "948369c4-b870-4acb-9d86-34baf676232a",
     "title": "left",
     "content": "Type EObject Multiplicity 0..1",
-    "timestamp": 1758397328877
+    "timestamp": 1758397834509
   },
   "references/eClassifiers/ReferenceChange/inheritance.html": {
     "path": "ReferenceChange/Inheritance",
-    "link-uuid": "3e1f4979-af7f-4689-b067-f67cc69d7ce4",
+    "link-uuid": "8597fe71-1eff-4cc0-9922-939a93283aba",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758397328943
+    "timestamp": 1758397834574
   },
   "references/eClassifiers/Conflict/references/eStructuralFeatures/kind/index.html": {
     "path": "Conflict/Attributes/kind",
-    "link-uuid": "7c9f255c-f5a9-4761-850d-5e8a65e52ce8",
+    "link-uuid": "fe52f8d1-d9aa-4ff2-ac42-018ea7e63d60",
     "title": "kind",
     "content": "Type ConflictKind Multiplicity 1",
-    "timestamp": 1758397328698
+    "timestamp": 1758397834315
   },
   "references/eClassifiers/MatchResource/references/eStructuralFeatures/comparison/index.html": {
     "path": "MatchResource/References/comparison",
-    "link-uuid": "585682ec-f5a5-43be-84bf-c739ec2757a1",
+    "link-uuid": "488de8b6-c6da-47ab-8560-4df8a49fd249",
     "title": "comparison",
     "content": "Type Comparison Multiplicity 0..1",
-    "timestamp": 1758397328910
+    "timestamp": 1758397834539
   },
   "references/eClassifiers/ResourceLocationChange/index.html": {
-    "link-uuid": "a59c0624-72cb-4869-a6e0-d76a35cd9fc2",
+    "link-uuid": "a156fe95-6896-4914-9a70-1bff5e5f2c56",
     "title": "ResourceLocationChange",
     "content": "Diagram ",
-    "timestamp": 1758397328992
+    "timestamp": 1758397834626
   },
   "references/eClassifiers/Diff/index.html": {
-    "link-uuid": "4add3c10-85e9-4c57-9fa1-24bb829dc76e",
+    "link-uuid": "7780f6d0-1c7b-4e52-b308-892125fc7188",
     "title": "Diff",
     "content": "Diagram ",
-    "timestamp": 1758397328728
+    "timestamp": 1758397834345
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/refines/index.html": {
     "path": "Diff/References/refines",
-    "link-uuid": "5ad3aec3-bd34-441f-baa6-f3363935835c",
+    "link-uuid": "1caa7fec-4547-42af-a022-74f64e6a2a0b",
     "title": "refines",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328766
+    "timestamp": 1758397834385
   },
   "references/eClassifiers/FeatureMapChange/index.html": {
-    "link-uuid": "ce3b3efd-fe24-4a7a-b652-0d241367d487",
+    "link-uuid": "76690bc9-cda0-47ef-ad12-6474b5076629",
     "title": "FeatureMapChange",
     "content": "Diagram ",
-    "timestamp": 1758397328826
+    "timestamp": 1758397834446
   },
   "references/eClassifiers/ReferenceChange/references/eStructuralFeatures/value/index.html": {
     "path": "ReferenceChange/References/value",
-    "link-uuid": "30b870fb-2f34-4076-9b23-3d1467f41d56",
+    "link-uuid": "05a1fbb8-5043-42b4-9238-b91b0a29d1af",
     "title": "value",
     "content": "Type EObject Multiplicity 0..1",
-    "timestamp": 1758397328952
+    "timestamp": 1758397834583
   },
   "references/eClassifiers/Comparison/references/eStructuralFeatures/equivalences/index.html": {
     "path": "Comparison/References/equivalences",
-    "link-uuid": "a5620a35-afd8-4e3b-88d8-75a2d26c8746",
+    "link-uuid": "64555d90-1b1a-4522-af60-b0919fbb4d50",
     "title": "equivalences",
     "content": "Type Equivalence Multiplicity 0..*",
-    "timestamp": 1758397328652
+    "timestamp": 1758397834269
   },
   "references/eClassifiers/Match/references/eOperations/getAllDifferences-2/index.html": {
     "path": "Match/Operations/getAllDifferences",
-    "link-uuid": "d3d3cee3-da1e-4bbe-8a79-a0d58e46a2c3",
+    "link-uuid": "1b040d2b-ee8b-4013-bb20-f59228304d5f",
     "title": "getAllDifferences",
     "content": "Type EIterable&lt; Diff&gt; Multiplicity 0..1",
-    "timestamp": 1758397328867
+    "timestamp": 1758397834500
   },
   "references/eClassifiers/ResourceAttachmentChange/index.html": {
-    "link-uuid": "c4578321-ea55-499f-a328-9b183467608e",
+    "link-uuid": "582466ea-cf2c-44c8-9f21-e0b0f23675cc",
     "title": "ResourceAttachmentChange",
     "content": "Diagram ",
-    "timestamp": 1758397328968
+    "timestamp": 1758397834602
   },
   "references/eClassifiers/Match/index.html": {
-    "link-uuid": "bf0e7f61-ec55-4e06-8a1e-3ea9bc03ad4c",
+    "link-uuid": "e5906dd2-7db4-4858-91ed-8524f733127a",
     "title": "Match",
     "content": "Diagram ",
-    "timestamp": 1758397328860
+    "timestamp": 1758397834483
   },
   "references/eClassifiers/Match/references/eOperations/getComparison-0/index.html": {
     "path": "Match/Operations/getComparison",
-    "link-uuid": "0d5c9fdb-8780-4ed0-8a1b-c759e0237f83",
+    "link-uuid": "36c1bd44-5d6b-4b85-82c2-b89d702709a9",
     "title": "getComparison",
     "content": "Type Comparison Multiplicity 0..1",
-    "timestamp": 1758397328872
+    "timestamp": 1758397834505
   },
   "references/eClassifiers/Comparison/references/eStructuralFeatures/matches/index.html": {
     "path": "Comparison/References/matches",
-    "link-uuid": "33aa2b83-f7c8-42d2-b942-307e4699c9f4",
+    "link-uuid": "3c85a6fa-2ccd-4b93-977b-c1b11d8de349",
     "title": "matches",
     "content": "Type Match Multiplicity 0..*",
-    "timestamp": 1758397328657
+    "timestamp": 1758397834274
   },
   "references/eClassifiers/Match/references/eStructuralFeatures/differences/index.html": {
     "path": "Match/References/differences",
-    "link-uuid": "10b0cf94-ddae-42bd-9810-c654910c5c29",
+    "link-uuid": "c082be85-8bb5-4e84-964f-6a4f6e70b588",
     "title": "differences",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328875
+    "timestamp": 1758397834507
   },
   "references/eClassifiers/Comparison/references/eStructuralFeatures/diagnostic/index.html": {
     "path": "Comparison/Attributes/diagnostic",
-    "link-uuid": "79666fca-ab68-4186-8b07-2844c02be978",
+    "link-uuid": "303ee898-6072-4046-93c3-87a5520fd3c6",
     "title": "diagnostic",
     "content": "Type Diagnostic Multiplicity 0..1",
-    "timestamp": 1758397328649
+    "timestamp": 1758397834266
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/kind/index.html": {
     "path": "Diff/Attributes/kind",
-    "link-uuid": "7930e687-baad-4c76-a5e8-9acf16cea1c6",
+    "link-uuid": "86feb59f-234d-4920-a4f4-2c29f6104139",
     "title": "kind",
     "content": "Type DifferenceKind Multiplicity 1",
-    "timestamp": 1758397328756
+    "timestamp": 1758397834374
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/requiredBy/index.html": {
     "path": "Diff/References/requiredBy",
-    "link-uuid": "310d7ac1-9450-4dd8-b06c-79cb422d8078",
+    "link-uuid": "a55586ce-4ab4-4fff-b90c-a62104391658",
     "title": "requiredBy",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328769
+    "timestamp": 1758397834387
   },
   "references/eClassifiers/Conflict/references/eOperations/getLeftDifferences-0/index.html": {
     "path": "Conflict/Operations/getLeftDifferences",
-    "link-uuid": "884698ab-745a-4049-a3d6-841703f7941f",
+    "link-uuid": "b2843105-06a8-44fe-baca-6bd6aabb881f",
     "title": "getLeftDifferences",
     "content": "Type Diff Multiplicity 1..*",
-    "timestamp": 1758397328691
+    "timestamp": 1758397834305
   },
   "references/eClassifiers/FeatureMapChange/references/eStructuralFeatures/value/index.html": {
     "path": "FeatureMapChange/Attributes/value",
-    "link-uuid": "628e500c-db0b-4d4e-a79f-391e63000eaf",
+    "link-uuid": "dcb8bf98-e85e-4cf1-bc3d-43e8ef6242bb",
     "title": "value",
     "content": "Type EJavaObject Multiplicity 0..1",
-    "timestamp": 1758397328839
+    "timestamp": 1758397834461
   },
   "references/eClassifiers/MatchResource/references/eStructuralFeatures/origin/index.html": {
     "path": "MatchResource/Attributes/origin",
-    "link-uuid": "c3886a29-3c97-4c70-9653-3e967cd91a4f",
+    "link-uuid": "db610c39-aa34-4e12-8238-bdc82683fda3",
     "title": "origin",
     "content": "Type EResource Multiplicity 0..1",
-    "timestamp": 1758397328918
+    "timestamp": 1758397834547
   },
   "references/eClassifiers/MatchResource/references/eStructuralFeatures/leftURI/index.html": {
     "path": "MatchResource/Attributes/leftURI",
-    "link-uuid": "54cf9778-9b83-42e9-bd22-357f70050762",
+    "link-uuid": "4ae6d40d-22ed-410d-a8fd-ca308f52e8e9",
     "title": "leftURI",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1758397328914
+    "timestamp": 1758397834543
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/implies/index.html": {
     "path": "Diff/References/implies",
-    "link-uuid": "28b041d7-27b5-40bb-871d-a6f260f35286",
+    "link-uuid": "4ea94860-0f7c-41f1-9480-148d22ce0fe3",
     "title": "implies",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328754
+    "timestamp": 1758397834372
   },
   "references/eClassifiers/MatchResource/references/eStructuralFeatures/originURI/index.html": {
     "path": "MatchResource/Attributes/originURI",
-    "link-uuid": "9a0cc254-bcd2-4ee4-82fe-339629d4c8a8",
+    "link-uuid": "eb2308b2-180a-4d2b-b067-c77d5e17729d",
     "title": "originURI",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758397328920
+    "timestamp": 1758397834549
   },
   "references/eClassifiers/Comparison/references/eStructuralFeatures/matchedResources/index.html": {
     "path": "Comparison/References/matchedResources",
-    "link-uuid": "618ce9f4-28c5-4306-b794-5ae6119d75f2",
+    "link-uuid": "c5a3c686-fc3c-4261-8c38-671325415f49",
     "title": "matchedResources",
     "content": "Type MatchResource Multiplicity 0..*",
-    "timestamp": 1758397328654
+    "timestamp": 1758397834271
   },
   "references/eClassifiers/Match/references/eStructuralFeatures/right/index.html": {
     "path": "Match/References/right",
-    "link-uuid": "504f49f5-27dd-4c1d-99c7-95b60f83a9f5",
+    "link-uuid": "b678544c-f0aa-4eb3-b44d-f89b306ff1c8",
     "title": "right",
     "content": "Type EObject Multiplicity 0..1",
-    "timestamp": 1758397328884
+    "timestamp": 1758397834515
   },
   "references/eClassifiers/Comparison/references/eOperations/getEqualityHelper-3/index.html": {
     "path": "Comparison/Operations/getEqualityHelper",
-    "link-uuid": "2290862c-31bf-4135-9750-7557b250e4d2",
+    "link-uuid": "df444dc9-4342-4b65-80c5-abf276e9c1ba",
     "title": "getEqualityHelper",
     "content": "Type IEqualityHelper Multiplicity 0..1",
-    "timestamp": 1758397328635
+    "timestamp": 1758397834252
   },
   "references/eClassifiers/MatchResource/references/eStructuralFeatures/right/index.html": {
     "path": "MatchResource/Attributes/right",
-    "link-uuid": "8aa06a15-705e-4a2b-9cbc-fa13100dae15",
+    "link-uuid": "7119fd50-38bf-4306-a418-1f6a14d37632",
     "title": "right",
     "content": "Type EResource Multiplicity 0..1",
-    "timestamp": 1758397328922
+    "timestamp": 1758397834551
   },
   "references/eClassifiers/MatchResource/references/eStructuralFeatures/rightURI/index.html": {
     "path": "MatchResource/Attributes/rightURI",
-    "link-uuid": "313ea3e2-859a-4eae-996b-0a21386aaf0e",
+    "link-uuid": "3946410e-54c0-47ed-b336-0e20c896230f",
     "title": "rightURI",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1758397328924
+    "timestamp": 1758397834553
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/conflict/index.html": {
     "path": "Diff/References/conflict",
-    "link-uuid": "4402afee-cc96-4c44-9447-42a583712116",
+    "link-uuid": "b2559af6-5971-452d-8462-9d6f1d33d345",
     "title": "conflict",
     "content": "Type Conflict Multiplicity 0..1",
-    "timestamp": 1758397328746
+    "timestamp": 1758397834365
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/refinedBy/index.html": {
     "path": "Diff/References/refinedBy",
-    "link-uuid": "af0b2ca9-6808-4f77-b549-3858503506b0",
+    "link-uuid": "ec748ff1-72aa-442a-8c50-f9be4e8d3d23",
     "title": "refinedBy",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328763
+    "timestamp": 1758397834382
   },
   "references/eClassifiers/Conflict/references/eOperations/getRightDifferences-1/index.html": {
     "path": "Conflict/Operations/getRightDifferences",
-    "link-uuid": "abbbce05-c2d0-443f-97c6-241b2da6af73",
+    "link-uuid": "ffe01e0b-1346-429e-bb84-a745932f9550",
     "title": "getRightDifferences",
     "content": "Type Diff Multiplicity 1..*",
-    "timestamp": 1758397328693
+    "timestamp": 1758397834307
   },
   "references/eClassifiers/Match/references/eOperations/getAllSubmatches-1/index.html": {
     "path": "Match/Operations/getAllSubmatches",
-    "link-uuid": "127ab36e-8c5e-4cca-ba9a-2ce9fa853ab3",
+    "link-uuid": "42318471-2d51-44d9-b658-00d6617d0c65",
     "title": "getAllSubmatches",
     "content": "Type EIterable&lt; Match&gt; Multiplicity 0..1",
-    "timestamp": 1758397328870
+    "timestamp": 1758397834503
   },
   "references/eClassifiers/Match/references/eStructuralFeatures/origin/index.html": {
     "path": "Match/References/origin",
-    "link-uuid": "b22cb65d-d9ca-4222-ac50-506b1a69fd14",
+    "link-uuid": "4f5f7a87-f85a-4772-ac39-625e3dc728bb",
     "title": "origin",
     "content": "Type EObject Multiplicity 0..1",
-    "timestamp": 1758397328881
+    "timestamp": 1758397834513
   },
   "references/eClassifiers/ReferenceChange/index.html": {
-    "link-uuid": "2b509e57-f726-4c6e-b2f4-4ef2759149e0",
+    "link-uuid": "fc4daf67-07bc-4b94-8742-036ca0df5b59",
     "title": "ReferenceChange",
     "content": "Diagram ",
-    "timestamp": 1758397328941
+    "timestamp": 1758397834572
   },
   "references/eClassifiers/MatchResource/index.html": {
-    "link-uuid": "d5e4a746-9625-4047-ba0c-f5d1cd859bb2",
+    "link-uuid": "5783072a-ef16-4916-9d57-3f87cfa8df0f",
     "title": "MatchResource",
     "content": "Diagram ",
-    "timestamp": 1758397328904
+    "timestamp": 1758397834534
   },
   "references/eClassifiers/Comparison/references/eOperations/getMatch-2/index.html": {
     "path": "Comparison/Operations/getMatch",
-    "link-uuid": "3b40d591-da17-42f1-be0f-69ff6b98f71d",
+    "link-uuid": "eab7a2d8-f5b5-49e0-817e-79112a251ff9",
     "title": "getMatch",
     "content": "Type Match Multiplicity 0..1",
-    "timestamp": 1758397328638
+    "timestamp": 1758397834255
   },
   "references/eClassifiers/Conflict/references/eStructuralFeatures/differences/index.html": {
     "path": "Conflict/References/differences",
-    "link-uuid": "0e741c3d-660b-49d0-8589-ea433fa93cca",
+    "link-uuid": "0e567fde-b7ba-41b8-86ca-542d42969faa",
     "title": "differences",
     "content": "Type Diff Multiplicity 2..*",
-    "timestamp": 1758397328695
+    "timestamp": 1758397834310
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/primeRefining/index.html": {
     "path": "Diff/References/primeRefining",
-    "link-uuid": "5fc78477-9d14-4000-9fd6-4f7652a49253",
+    "link-uuid": "7bb11337-97cd-42fd-b4b6-4027a41257b8",
     "title": "primeRefining",
     "content": "Type Diff Multiplicity 0..1",
-    "timestamp": 1758397328761
+    "timestamp": 1758397834380
   },
   "references/eClassifiers/FeatureMapChange/inheritance.html": {
     "path": "FeatureMapChange/Inheritance",
-    "link-uuid": "c3e7f362-10ed-4868-ba63-da613487d498",
+    "link-uuid": "6975e010-16a2-439e-acb0-6038f033b709",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758397328828
+    "timestamp": 1758397834449
   },
   "references/eClassifiers/AttributeChange/inheritance.html": {
     "path": "AttributeChange/Inheritance",
-    "link-uuid": "32334a11-da3d-4d2a-9d56-13dca4ebd488",
+    "link-uuid": "beddde43-bcc1-459d-8a23-f3e7ebc697f2",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758397328568
+    "timestamp": 1758397834186
   },
   "references/eClassifiers/MatchResource/references/eStructuralFeatures/locationChanges/index.html": {
     "path": "MatchResource/References/locationChanges",
-    "link-uuid": "65917e5c-acf4-4502-8a72-67e8e0e08ca0",
+    "link-uuid": "77406af8-2012-41bb-b21a-d9c8d2ae5702",
     "title": "locationChanges",
     "content": "Type ResourceLocationChange Multiplicity 0..2",
-    "timestamp": 1758397328916
+    "timestamp": 1758397834545
   },
   "references/eClassifiers/MatchResource/references/eStructuralFeatures/left/index.html": {
     "path": "MatchResource/Attributes/left",
-    "link-uuid": "e0f7708d-e925-4c61-820e-fc6ffaa1a754",
+    "link-uuid": "84cfe355-16f4-474c-af06-7c5a8f4950bc",
     "title": "left",
     "content": "Type EResource Multiplicity 0..1",
-    "timestamp": 1758397328912
+    "timestamp": 1758397834541
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/impliedBy/index.html": {
     "path": "Diff/References/impliedBy",
-    "link-uuid": "b4cd8d4f-2220-4351-88f9-c492fa622493",
+    "link-uuid": "00b4eb5d-021f-4b02-a8a5-9bc7fa0e86f7",
     "title": "impliedBy",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328751
+    "timestamp": 1758397834370
   },
   "references/eClassifiers/AttributeChange/index.html": {
-    "link-uuid": "8f09d01d-0d22-4024-a106-190839e89f45",
+    "link-uuid": "d053fd77-085c-4752-9de7-2476f34a07f9",
     "title": "AttributeChange",
     "content": "Diagram ",
-    "timestamp": 1758397328564
+    "timestamp": 1758397834182
   },
   "references/eClassifiers/AttributeChange/references/eStructuralFeatures/attribute/index.html": {
     "path": "AttributeChange/References/attribute",
-    "link-uuid": "edb14938-8644-400d-b160-00110d2d1345",
+    "link-uuid": "06a35ca1-29ec-4947-b054-89fe745c3542",
     "title": "attribute",
     "content": "Type EAttribute Multiplicity 1",
-    "timestamp": 1758397328577
+    "timestamp": 1758397834195
   },
   "references/eClassifiers/FeatureMapChange/references/eStructuralFeatures/attribute/index.html": {
     "path": "FeatureMapChange/References/attribute",
-    "link-uuid": "982b7387-f75d-4a92-948b-4750572bc024",
+    "link-uuid": "96d35a78-781b-4cea-93d7-d81a6f4363e9",
     "title": "attribute",
     "content": "Type EAttribute Multiplicity 1",
-    "timestamp": 1758397328837
+    "timestamp": 1758397834456
   },
   "references/eClassifiers/Equivalence/references/eStructuralFeatures/differences/index.html": {
     "path": "Equivalence/References/differences",
-    "link-uuid": "8bb4b002-a2f5-4adb-91a1-e34aa74715bd",
+    "link-uuid": "c2129ee7-d13f-45b0-ad9d-67759dbd81e4",
     "title": "differences",
     "content": "Type Diff Multiplicity 2..*",
-    "timestamp": 1758397328810
+    "timestamp": 1758397834427
   },
   "references/eClassifiers/Comparison/index.html": {
-    "link-uuid": "203f66ed-3eed-4c4f-9516-4b645193da4e",
+    "link-uuid": "316be296-e387-472a-9087-d8b1d801e059",
     "title": "Comparison",
     "content": "Diagram ",
-    "timestamp": 1758397328613
+    "timestamp": 1758397834228
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/requires/index.html": {
     "path": "Diff/References/requires",
-    "link-uuid": "54a66b61-1b44-4cff-9d74-ff886e4d04b5",
+    "link-uuid": "d81b181d-7c69-42f1-96ac-f046f1b9b98e",
     "title": "requires",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328771
+    "timestamp": 1758397834389
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/match/index.html": {
     "path": "Diff/References/match",
-    "link-uuid": "ee6dd3a1-3863-4c66-b87f-fac5b23af972",
+    "link-uuid": "6fa7c3ff-bdca-4110-918e-a0cd9ba5211f",
     "title": "match",
     "content": "Type Match Multiplicity 0..1",
-    "timestamp": 1758397328758
+    "timestamp": 1758397834376
   },
   "references/eClassifiers/Diff/references/eStructuralFeatures/source/index.html": {
     "path": "Diff/Attributes/source",
-    "link-uuid": "b60d0a7c-3142-4fcd-aae1-e4c653360db5",
+    "link-uuid": "cd0bbfa6-2e51-450c-bd9a-26609bc9f44b",
     "title": "source",
     "content": "Type DifferenceSource Multiplicity 1",
-    "timestamp": 1758397328774
+    "timestamp": 1758397834391
   },
   "references/eClassifiers/Comparison/references/eStructuralFeatures/threeWay/index.html": {
     "path": "Comparison/Attributes/threeWay",
-    "link-uuid": "00f41853-5484-4bd5-b450-feb6c665470f",
+    "link-uuid": "b599f9ff-7b5d-4229-bd18-48672676807a",
     "title": "threeWay",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1758397328659
+    "timestamp": 1758397834276
   },
   "references/eClassifiers/ReferenceChange/references/eStructuralFeatures/reference/index.html": {
     "path": "ReferenceChange/References/reference",
-    "link-uuid": "2d6caabb-f403-4005-8751-64175b5525d8",
+    "link-uuid": "bba72225-d427-4f26-a569-586df2c67b39",
     "title": "reference",
     "content": "Type EReference Multiplicity 1",
-    "timestamp": 1758397328949
+    "timestamp": 1758397834580
   },
   "references/eClassifiers/AttributeChange/references/eStructuralFeatures/value/index.html": {
     "path": "AttributeChange/Attributes/value",
-    "link-uuid": "80fdb386-0469-498e-bac3-41b78aece637",
+    "link-uuid": "bd3d9c00-dd0d-4cab-b8a7-85ac7d2fb9ce",
     "title": "value",
     "content": "Type EJavaObject Multiplicity 0..1",
-    "timestamp": 1758397328580
+    "timestamp": 1758397834199
   },
   "references/eClassifiers/Equivalence/index.html": {
-    "link-uuid": "64a86c4a-d912-4bc6-a333-78d37802f057",
+    "link-uuid": "69fba704-74ed-4784-8177-bee10fd31ac1",
     "title": "Equivalence",
     "content": "Diagram ",
-    "timestamp": 1758397328805
+    "timestamp": 1758397834423
   },
   "references/eClassifiers/ResourceAttachmentChange/references/eStructuralFeatures/resourceURI/index.html": {
     "path": "ResourceAttachmentChange/Attributes/resourceURI",
-    "link-uuid": "b78c4fa8-9492-4f06-82ab-776ff49fe775",
+    "link-uuid": "7a43a745-6ed2-4f62-906c-a4743e692031",
     "title": "resourceURI",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1758397328976
+    "timestamp": 1758397834609
   },
   "references/eClassifiers/Comparison/references/eStructuralFeatures/conflicts/index.html": {
     "path": "Comparison/References/conflicts",
-    "link-uuid": "64c64e7c-a6a3-4061-81e1-a25612362da4",
+    "link-uuid": "2fab2728-9efc-4e47-98ab-55314f86a145",
     "title": "conflicts",
     "content": "Type Conflict Multiplicity 0..*",
-    "timestamp": 1758397328646
+    "timestamp": 1758397834263
   },
   "references/eClassifiers/Comparison/references/eOperations/getDifferences-1/index.html": {
     "path": "Comparison/Operations/getDifferences",
-    "link-uuid": "ec1601aa-2905-4236-b3f9-5a345db4d2fa",
+    "link-uuid": "dbe53f75-297a-453b-b4f5-79d9bf05fc2e",
     "title": "getDifferences",
     "content": "Type Diff Multiplicity 0..*",
-    "timestamp": 1758397328626
+    "timestamp": 1758397834244
   },
   "references/eClassifiers/Conflict/index.html": {
-    "link-uuid": "b9f87f72-f02c-4ed5-8e09-2f817e195cb0",
+    "link-uuid": "48b41619-15c9-4c0f-8945-c9c135e68d71",
     "title": "Conflict",
     "content": "Diagram ",
-    "timestamp": 1758397328684
+    "timestamp": 1758397834298
   }
 }
