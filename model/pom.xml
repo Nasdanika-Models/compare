@@ -12,7 +12,24 @@
 	<packaging>jar</packaging>
 	<name>Eclipse EMF Compare Model</name>
 	<description>Eclipse EMF Compare Model wrapped into a Maven jar/Java module to make it available in the Maven ecosystem</description>
+
+	<url>https://compare.models.nasdanika.org/</url>
+
+	<scm>
+		<url>https://github.com/Nasdanika-Models/compare</url>
+	</scm>
+
 	<build>
+        <resources>
+            <resource>
+                <directory>src/main/imported/src</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>myconfig.xml</include>
+                </includes>                
+            </resource>
+        </resources>
+	
 		<plugins>
 			<plugin>
                 <groupId>org.codehaus.mojo</groupId>
