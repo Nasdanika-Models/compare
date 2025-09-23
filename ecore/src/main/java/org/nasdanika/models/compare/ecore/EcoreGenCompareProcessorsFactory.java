@@ -54,9 +54,11 @@ public class EcoreGenCompareProcessorsFactory {
 				```drawio-resource
 				compare.drawio
 				```
-					
-				[Maven Central](https://central.sonatype.com/artifact/org.nasdanika.models.compare/model).	
-					
+				
+				* [Sources](https://github.com/Nasdanika-Models/compare)	
+				* [Javadoc](https://javadoc.io/doc/org.nasdanika.models.compare/model)	
+				* [Maven Central](https://central.sonatype.com/artifact/org.nasdanika.models.compare/model)
+				* [Harnessing complex change with EMF Compare, Git URI Handler and GenAI](https://medium.com/nasdanika/harnessing-complex-change-with-emf-compare-git-uri-handler-and-genai-c9ee5c8b53e2) Medium story						
 				
 				## Examples
 				
