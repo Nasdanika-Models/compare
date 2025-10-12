@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nasdanika.models.compare</groupId>
 	<artifactId>parent</artifactId>
-	<version>2025.10.0</version>
+	<version>3.3.27</version>
 	<packaging>pom</packaging>
 	<name>EMF Compare</name>
 	<description>Eclipse EMF Compare model adaptation to the Maven ecosystem</description>
@@ -20,9 +20,9 @@
 	</scm>
 
 	<properties>
-		<core.version>2025.10.0</core.version>
-		<html.version>2025.10.0</html.version>
-		<models.ecore.version>2025.10.0</models.ecore.version>
+		<core.version>2025.7.0</core.version>
+		<html.version>2025.7.0</html.version>
+		<models.ecore.version>2025.7.0</models.ecore.version>
 		<jacoco.version>0.8.12</jacoco.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
@@ -60,12 +60,19 @@
 		        <plugin>
 		            <groupId>org.apache.maven.plugins</groupId>
 		            <artifactId>maven-surefire-plugin</artifactId>
-		            <version>3.5.4</version>
+		            <version>3.5.3</version>
+		            <dependencies>
+		                <dependency>
+		                    <groupId>org.junit.jupiter</groupId>
+		                    <artifactId>junit-jupiter-engine</artifactId>
+		                    <version>5.12.1</version>
+		                </dependency>
+		            </dependencies>
 		        </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.12.0</version>
+				<version>3.11.2</version>
 			
 				<executions>
 					<execution>
@@ -152,13 +159,13 @@
 		<dependency>
 		    <groupId>org.junit.jupiter</groupId>
 		    <artifactId>junit-jupiter-api</artifactId>
-		    <version>6.0.0</version>
+		    <version>5.12.1</version>
 		    <scope>test</scope>
 		</dependency>		
 		<dependency>
 		    <groupId>org.junit.jupiter</groupId>
 		    <artifactId>junit-jupiter-engine</artifactId>
-		    <version>6.0.0</version>
+		    <version>5.12.1</version>
 		    <scope>test</scope>
 		</dependency>		
 	</dependencies>
@@ -176,7 +183,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>3.2.8</version>
+						<version>3.2.7</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
@@ -190,7 +197,7 @@
 					<plugin>					
 						<groupId>org.sonatype.central</groupId>
 						<artifactId>central-publishing-maven-plugin</artifactId>
-						<version>0.9.0</version>
+						<version>0.8.0</version>
 						<extensions>true</extensions>
 						<configuration>
 							<publishingServerId>central</publishingServerId>
